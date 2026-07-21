@@ -8,6 +8,7 @@ Web
 <img width="1863" height="947" alt="image" src="https://github.com/user-attachments/assets/a9cebb87-d29f-4efc-825f-dd24104f0164" />
 
 Mobile
+
 <img width="392" height="871" alt="image" src="https://github.com/user-attachments/assets/20237cb0-6b52-43f1-9bb6-acb3cc1e4eb8" />
 
 
