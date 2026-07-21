@@ -1,0 +1,3051 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Serkan Pan | Healthcare IT Professional</title>
+	
+	<!-- Adres çubuğu logo ! -->
+	
+	<link rel="icon" type="image/png" href="image/sp-logo.png">
+	
+
+    <meta name="description"
+        content="Serkan Pan - Healthcare IT Professional, PACS and IT Operations Specialist">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+
+        :root {
+
+            --navy: #071a33;
+            --navy-light: #123b69;
+
+            --blue: #2879d8;
+            --blue-light: #6eaff5;
+
+            --text: #172033;
+            --muted: #6b7483;
+
+            --light: #f5f7fa;
+            --white: #ffffff;
+
+            --border: #e5e9ef;
+
+        }
+
+
+        * {
+
+            margin: 0;
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+
+        body {
+
+            font-family: "Inter", sans-serif;
+
+            color: var(--text);
+
+            background: var(--white);
+
+            line-height: 1.6;
+
+        }
+
+
+        a {
+
+            color: inherit;
+
+            text-decoration: none;
+
+        }
+
+
+        .container {
+
+            width: min(1180px, 90%);
+
+            margin: auto;
+
+        }
+
+
+        /* ================= HEADER ================= */
+
+        header {
+
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+
+            z-index: 1000;
+
+            background: rgba(255, 255, 255, 0.96);
+
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid var(--border);
+
+        }
+
+
+        nav {
+
+            height: 76px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+        }
+
+
+        .logo {
+
+            font-size: 24px;
+
+            font-weight: 800;
+
+            letter-spacing: -1px;
+
+            color: var(--navy);
+
+        }
+
+
+        .logo span {
+
+            color: var(--blue);
+
+        }
+
+
+        .nav-right {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 28px;
+
+        }
+
+
+        .nav-links {
+
+            display: flex;
+
+            gap: 28px;
+
+            list-style: none;
+
+        }
+
+
+        .nav-links a {
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            transition: 0.3s;
+
+        }
+
+
+        .nav-links a:hover {
+
+            color: var(--blue);
+
+        }
+
+
+        .language-switcher {
+
+            display: flex;
+
+            overflow: hidden;
+
+            border: 1px solid var(--border);
+
+            border-radius: 6px;
+
+        }
+
+
+        .language-switcher button {
+
+            border: none;
+
+            padding: 8px 12px;
+
+            background: white;
+
+            color: var(--muted);
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            cursor: pointer;
+
+        }
+
+
+        .language-switcher button.active {
+
+            background: var(--navy);
+
+            color: white;
+
+        }
+
+
+        .menu-btn {
+
+            display: none;
+
+            font-size: 25px;
+
+            cursor: pointer;
+
+        }
+
+
+        /* ================= HERO ================= */
+
+        .hero {
+
+            min-height: 100vh;
+
+            padding-top: 76px;
+
+            display: flex;
+
+            align-items: center;
+
+            color: white;
+
+
+            background:
+
+                linear-gradient(
+
+                    115deg,
+
+                    rgba(5, 20, 40, 0.98),
+
+                    rgba(18, 57, 103, 0.95)
+
+                ),
+
+                url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2000&q=80");
+
+
+            background-size: cover;
+
+            background-position: center;
+
+        }
+
+
+        .hero-grid {
+
+            display: grid;
+
+            grid-template-columns: 1.1fr 0.9fr;
+
+            align-items: center;
+
+            gap: 80px;
+
+        }
+
+
+        .hero-label {
+
+            color: var(--blue-light);
+
+            font-size: 13px;
+
+            letter-spacing: 3px;
+
+            font-weight: 800;
+
+            margin-bottom: 22px;
+
+        }
+
+
+        .hero h1 {
+
+            font-size: clamp(44px, 6vw, 78px);
+
+            line-height: 1.05;
+
+            letter-spacing: -3px;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .hero h1 span {
+
+            color: var(--blue-light);
+
+        }
+
+
+        .hero-description {
+
+            max-width: 650px;
+
+            color: #d6e0ed;
+
+            font-size: 18px;
+
+            margin-bottom: 35px;
+
+        }
+
+
+        .hero-buttons {
+
+            display: flex;
+
+            gap: 14px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        .btn {
+
+            padding: 14px 24px;
+
+            border-radius: 6px;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            transition: 0.3s;
+
+        }
+
+
+        .btn-primary {
+
+            background: var(--blue);
+
+            color: white;
+
+        }
+
+
+        .btn-primary:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow: 0 10px 25px rgba(40, 121, 216, 0.35);
+
+        }
+
+
+        .btn-outline {
+
+            border: 1px solid rgba(255, 255, 255, 0.4);
+
+            color: white;
+
+        }
+
+
+        .btn-outline:hover {
+
+            background: white;
+
+            color: var(--navy);
+
+        }
+
+
+        /* ================= PROFILE SLIDER ================= */
+
+        .profile-area {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+        }
+
+
+        .profile-slider {
+
+            width: 340px;
+
+            height: 430px;
+
+            position: relative;
+
+            overflow: hidden;
+
+            border-radius: 18px;
+
+            background: #ffffff;
+
+            border: 8px solid rgba(255, 255, 255, 0.12);
+
+            box-shadow:
+
+                0 30px 80px rgba(0, 0, 0, 0.40),
+
+                0 0 0 1px rgba(255, 255, 255, 0.10);
+
+        }
+
+
+        .slider-images {
+
+            width: 100%;
+
+            height: 100%;
+
+        }
+
+
+        .slide {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            object-position: center 25%;
+
+            display: none;
+
+        }
+
+
+        .slide.active {
+
+            display: block;
+
+            animation: fadeIn 0.5s ease;
+
+        }
+
+
+        @keyframes fadeIn {
+
+            from {
+
+                opacity: 0;
+
+                transform: scale(1.03);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: scale(1);
+
+            }
+
+        }
+
+
+        /* SLIDER BUTTONS */
+
+        .slider-btn {
+
+            position: absolute;
+
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            width: 42px;
+
+            height: 42px;
+
+            border-radius: 50%;
+
+            border: none;
+
+            background: rgba(0, 0, 0, 0.55);
+
+            color: white;
+
+            font-size: 32px;
+
+            line-height: 35px;
+
+            cursor: pointer;
+
+            opacity: 0;
+
+            transition: 0.3s;
+
+        }
+
+
+        .profile-slider:hover .slider-btn {
+
+            opacity: 1;
+
+        }
+
+
+        .slider-btn:hover {
+
+            background: var(--blue);
+
+        }
+
+
+        .slider-btn.prev {
+
+            left: 12px;
+
+        }
+
+
+        .slider-btn.next {
+
+            right: 12px;
+
+        }
+
+
+        /* SLIDER DOTS */
+
+        .slider-dots {
+
+            position: absolute;
+
+            bottom: 15px;
+
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            display: flex;
+
+            gap: 8px;
+
+        }
+
+
+        .dot {
+
+            width: 9px;
+
+            height: 9px;
+
+            border-radius: 50%;
+
+            background: rgba(255, 255, 255, 0.55);
+
+            cursor: pointer;
+
+            transition: 0.3s;
+
+        }
+
+
+        .dot.active {
+
+            background: white;
+
+            transform: scale(1.3);
+
+        }
+
+
+        /* ================= GENERAL ================= */
+
+        section {
+
+            padding: 105px 0;
+
+        }
+
+
+        .section-heading {
+
+            margin-bottom: 55px;
+
+        }
+
+
+        .section-heading span {
+
+            color: var(--blue);
+
+            font-size: 13px;
+
+            letter-spacing: 2px;
+
+            font-weight: 800;
+
+        }
+
+
+        .section-heading h2 {
+
+            color: var(--navy);
+
+            font-size: 40px;
+
+            margin-top: 10px;
+
+        }
+
+
+        .section-heading p {
+
+            max-width: 720px;
+
+            color: var(--muted);
+
+            margin-top: 15px;
+
+        }
+
+
+        /* ================= ABOUT ================= */
+
+        .about {
+
+            background: var(--light);
+
+        }
+
+
+        .about-grid {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 80px;
+
+        }
+
+
+        .about-text p {
+
+            color: var(--muted);
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .stats {
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 20px;
+
+        }
+
+
+        .stat {
+
+            padding: 30px;
+
+            background: white;
+
+            border: 1px solid var(--border);
+
+            border-radius: 10px;
+
+        }
+
+
+        .stat h3 {
+
+            color: var(--blue);
+
+            font-size: 38px;
+
+        }
+
+
+        .stat p {
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+        }
+
+
+        /* ================= EXPERIENCE ================= */
+
+        .timeline {
+
+            border-left: 2px solid var(--border);
+
+            padding-left: 35px;
+
+        }
+
+
+        .timeline-item {
+
+            position: relative;
+
+            margin-bottom: 45px;
+
+        }
+
+
+        .timeline-item::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 14px;
+
+            height: 14px;
+
+            border-radius: 50%;
+
+            background: var(--blue);
+
+            left: -43px;
+
+            top: 6px;
+
+        }
+
+
+        .timeline-date {
+
+            color: var(--blue);
+
+            font-size: 13px;
+
+            font-weight: 800;
+
+        }
+
+
+        .timeline-item h3 {
+
+            color: var(--navy);
+
+            font-size: 22px;
+
+            margin: 7px 0;
+
+        }
+
+
+        .timeline-item h4 {
+
+            color: var(--muted);
+
+            font-weight: 500;
+
+            margin-bottom: 12px;
+
+        }
+
+
+        .timeline-item p {
+
+            color: var(--muted);
+
+        }
+
+
+        /* ================= SKILLS ================= */
+
+        .skills {
+
+            background: var(--light);
+
+        }
+
+
+        .skills-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 20px;
+
+        }
+
+
+        .skill-card {
+
+            padding: 30px;
+
+            background: white;
+
+            border: 1px solid var(--border);
+
+            border-radius: 10px;
+
+            transition: 0.3s;
+
+        }
+
+
+        .skill-card:hover {
+
+            transform: translateY(-7px);
+
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+
+        }
+
+
+        .skill-card h3 {
+
+            color: var(--navy);
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .skill-card p {
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+        }
+
+
+        /* ================= CERTIFICATIONS ================= */
+
+        .education-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 20px;
+
+        }
+
+
+        .education-card {
+
+            padding: 30px;
+
+            border: 1px solid var(--border);
+
+            border-radius: 10px;
+
+        }
+
+
+        .education-card h3 {
+
+            color: var(--navy);
+
+            margin-bottom: 8px;
+
+        }
+
+
+        .education-card p {
+
+            color: var(--muted);
+
+        }
+
+
+        /* ================= CONTACT ================= */
+
+        .contact {
+
+            background: var(--navy);
+
+            color: white;
+
+            text-align: center;
+
+        }
+
+
+        .contact .section-heading h2 {
+
+            color: white;
+
+        }
+
+
+        .contact .section-heading p {
+
+            color: #cbd8e8;
+
+            margin-left: auto;
+
+            margin-right: auto;
+
+        }
+
+
+        .contact-links {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        .contact-link {
+
+            padding: 14px 22px;
+
+            border: 1px solid rgba(255, 255, 255, 0.25);
+
+            border-radius: 6px;
+
+            color: white;
+
+            transition: 0.3s;
+
+        }
+
+
+        .contact-link:hover {
+
+            background: white;
+
+            color: var(--navy);
+
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+
+            background: #061426;
+
+            color: #aebbd0;
+
+            text-align: center;
+
+            padding: 25px;
+
+            font-size: 13px;
+
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 850px) {
+
+
+            .nav-links {
+
+                display: none;
+
+                position: absolute;
+
+                top: 76px;
+
+                left: 0;
+
+                width: 100%;
+
+                padding: 25px;
+
+                background: white;
+
+                flex-direction: column;
+
+                gap: 20px;
+
+                border-bottom: 1px solid var(--border);
+
+            }
+
+
+            .nav-links.active {
+
+                display: flex;
+
+            }
+
+
+            .menu-btn {
+
+                display: block;
+
+            }
+
+
+            .hero-grid,
+
+            .about-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .hero {
+
+                padding: 130px 0 80px;
+
+            }
+
+
+            .profile-area {
+
+                order: -1;
+
+            }
+
+
+            .profile-slider {
+
+                width: 280px;
+
+                height: 350px;
+
+            }
+
+
+            .hero-content {
+
+                text-align: center;
+
+            }
+
+
+            .hero-buttons {
+
+                justify-content: center;
+
+            }
+
+
+            .skills-grid,
+
+            .education-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+
+        @media (max-width: 500px) {
+
+
+            .logo {
+
+                font-size: 21px;
+
+            }
+
+
+            .profile-slider {
+
+                width: 250px;
+
+                height: 315px;
+
+            }
+
+
+            .stats {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .hero h1 {
+
+                font-size: 44px;
+
+            }
+
+
+            .hero-description {
+
+                font-size: 16px;
+
+            }
+
+
+            .section-heading h2 {
+
+                font-size: 30px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="container">
+
+            <nav>
+
+
+                <a href="#home" class="logo">
+
+                    SERKAN<span>PAN</span>
+
+                </a>
+
+
+                <div class="nav-right">
+
+
+                    <ul class="nav-links" id="navLinks">
+
+                        <li>
+
+                            <a href="#about" data-i18n="navAbout">
+
+                                Hakkımda
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="#experience" data-i18n="navExperience">
+
+                                Deneyim
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="#skills" data-i18n="navSkills">
+
+                                Uzmanlık
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="#education" data-i18n="navEducation">
+
+                                Sertifikalar
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="#contact" data-i18n="navContact">
+
+                                İletişim
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+
+                    <div class="language-switcher">
+
+                        <button id="trBtn" class="active">
+
+                            TR
+
+                        </button>
+
+
+                        <button id="enBtn">
+
+                            EN
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="menu-btn" id="menuBtn">
+
+                        ☰
+
+                    </div>
+
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="container">
+
+            <div class="hero-grid">
+
+
+                <div class="hero-content">
+
+
+                    <div class="hero-label">
+
+                        HEALTHCARE IT PROFESSIONAL
+
+                    </div>
+
+
+                    <h1>
+
+                        Technology.<br>
+
+                        <span>Healthcare.</span><br>
+
+                        Leadership.
+
+                    </h1>
+
+
+                    <p class="hero-description" data-i18n="heroDescription">
+
+                        Sağlık bilişimi, hastane bilgi sistemleri ve IT operasyonları alanında deneyimli teknoloji profesyoneli.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+
+                        <a href="#experience"
+
+                            class="btn btn-primary"
+
+                            data-i18n="careerButton">
+
+                            Kariyerimi İncele
+
+                        </a>
+
+
+                        <a href="mailto:panserkan34@gmail.com"
+
+                            class="btn btn-outline"
+
+                            data-i18n="contactButton">
+
+                            İletişime Geç
+
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- FOTOĞRAF SLIDER -->
+
+                <div class="profile-area">
+
+
+                    <div class="profile-slider">
+
+
+                        <div class="slider-images">
+
+
+                            <img src="image/serkan-1.jpg"
+
+                                class="slide active"
+
+                                alt="Serkan Pan">
+
+
+                            <img src="image/serkan-2.jpg"
+
+                                class="slide"
+
+                                alt="Serkan Pan">
+
+
+                         
+
+
+                        </div>
+
+
+                        <button class="slider-btn prev"
+
+                            id="prevBtn">
+
+                            ‹
+
+                        </button>
+
+
+                        <button class="slider-btn next"
+
+                            id="nextBtn">
+
+                            ›
+
+                        </button>
+
+
+                        <div class="slider-dots">
+
+
+                            <span class="dot active"
+
+                                data-slide="0"></span>
+
+
+                            <span class="dot"
+
+                                data-slide="1"></span>
+
+
+                          
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
+
+
+        <div class="container">
+
+
+            <div class="section-heading">
+
+
+                <span data-i18n="aboutLabel">
+
+                    HAKKIMDA
+
+                </span>
+
+
+                <h2 data-i18n="aboutTitle">
+
+                    Teknik uzmanlık ve sağlık bilişimi deneyimi.
+
+                </h2>
+
+
+                <p data-i18n="aboutIntro">
+
+                    Sağlık sektöründe farklı teknoloji alanlarında edindiğim deneyimleri, sistem sürekliliği ve operasyonel verimlilik hedefleriyle birleştiriyorum.
+
+                </p>
+
+
+            </div>
+
+
+            <div class="about-grid">
+
+
+                <div class="about-text">
+
+
+                    <p data-i18n="aboutText1">
+
+                        Yaklaşık 8 yıllık IT ve sağlık bilişimi deneyimine sahibim. Kariyerim boyunca hastane bilgi teknolojileri, PACS, tıbbi görüntüleme sistemleri ve kurumsal IT operasyonları alanlarında aktif görev aldım.
+
+                    </p>
+
+
+                    <p data-i18n="aboutText2">
+
+                        Acıbadem Sağlık Grubu'ndaki mevcut görevimde Active Directory, Microsoft Configuration Manager, son kullanıcı destek süreçleri, VPN, ağ altyapısı, sunucu ve sistem operasyonları gibi birçok alanda sorumluluk üstleniyorum.
+
+                    </p>
+
+
+                    <p data-i18n="aboutText3">
+
+                        Sağlık teknolojilerinin kesintisiz, güvenli ve sürdürülebilir şekilde çalışmasına katkı sağlamayı hedefliyorum.
+
+                    </p>
+
+
+                </div>
+
+
+                <div class="stats">
+
+
+                    <div class="stat">
+
+                        <h3>8+</h3>
+
+                        <p data-i18n="statExperience">
+
+                            Yıl IT Deneyimi
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <h3>3+</h3>
+
+                        <p data-i18n="statHealthcare">
+
+                            Yıl Sağlık Teknolojileri Deneyimi
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <h3>PACS</h3>
+
+                        <p data-i18n="statPacs">
+
+                            Tıbbi Görüntüleme
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <h3>IT</h3>
+
+                        <p data-i18n="statOperations">
+
+                            Sistem ve Operasyon Yönetimi
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section id="experience">
+
+
+        <div class="container">
+
+
+            <div class="section-heading">
+
+
+                <span data-i18n="experienceLabel">
+
+                    KARİYER
+
+                </span>
+
+
+                <h2 data-i18n="experienceTitle">
+
+                    Profesyonel Deneyim
+
+                </h2>
+
+
+                <p data-i18n="experienceIntro">
+
+                    IT destek operasyonlarından sağlık bilişimi ve kurumsal sistem yönetimine uzanan kariyer yolculuğum.
+
+                </p>
+
+
+            </div>
+
+
+            <div class="timeline">
+
+
+                <div class="timeline-item">
+
+
+                    <div class="timeline-date"
+
+                        data-tr="Mayıs 2022 – Günümüz"
+
+                        data-en="May 2022 – Present">
+
+                        Mayıs 2022 – Günümüz
+
+                    </div>
+
+
+                    <h3 data-i18n="job1Title">
+
+                        Sistem Destek Sorumlusu
+
+                    </h3>
+
+
+                    <h4>
+
+                        Acıbadem Sağlık Grubu
+
+                    </h4>
+
+
+                    <p data-i18n="job1Text">
+
+                        Active Directory kullanıcı ve envanter yönetimi, Microsoft Configuration Manager, Right Click Tools, son kullanıcı desteği, cihaz kurulumları, VPN, switch panelleri, IP yazıcılar, McAfee, Exchange, Access Point, Print Server, VMware, sunucu disk değişimi ve Linux sistem işlemleri.
+
+                    </p>
+
+
+                </div>
+
+
+                <div class="timeline-item">
+
+
+                    <div class="timeline-date"
+
+                        data-tr="Temmuz 2020 – Nisan 2022"
+
+                        data-en="Jul 2020 – Apr 2022">
+
+                        Temmuz 2020 – Nisan 2022
+
+                    </div>
+
+
+                    <h3 data-i18n="job2Title">
+
+                        Bilgi Teknolojileri Sorumlusu
+
+                    </h3>
+
+
+                    <h4>
+
+                        Protek Sağlık
+
+                    </h4>
+
+
+                    <p data-i18n="job2Text">
+
+                        PACS kurulumu, KOS gönderim süreçleri, HL7 mesaj kontrolleri, VPN, kullanıcı yetkilendirme, medikal monitörler, CD robotları, workstation kurulumları ve medikal cihaz entegrasyonları.
+
+                    </p>
+
+
+                </div>
+
+
+                <div class="timeline-item">
+
+
+                    <div class="timeline-date"
+
+                        data-tr="Eylül 2019 – Haziran 2020"
+
+                        data-en="Sep 2019 – Jun 2020">
+
+                        Eylül 2019 – Haziran 2020
+
+                    </div>
+
+
+                    <h3 data-i18n="job3Title">
+
+                        Bilgi Teknolojileri / IT Uzmanı
+
+                    </h3>
+
+
+                    <h4>
+
+                        Hitachi Healthcare Turkey
+
+                    </h4>
+
+
+                    <p data-i18n="job3Text">
+
+                        PACS sistemleri, medikal cihaz entegrasyonları, HL7 süreçleri, VPN, kullanıcı hesapları, workstation, SpeechMike ve sağlık teknolojileri operasyonları.
+
+                    </p>
+
+
+                </div>
+
+
+                <div class="timeline-item">
+
+
+                    <div class="timeline-date"
+
+                        data-tr="Şubat 2018 – Temmuz 2018"
+
+                        data-en="Feb 2018 – Jul 2018">
+
+                        Şubat 2018 – Temmuz 2018
+
+                    </div>
+
+
+                    <h3 data-i18n="job5Title">
+
+                        Grafik Tasarımcı
+
+                    </h3>
+
+
+                    <h4>
+
+                        Renk Matbaa
+
+                    </h4>
+
+
+                    <p data-i18n="job5Text">
+
+                        Logo, web banner, katalog, broşür, menü, ambalaj ve kurumsal tasarım çalışmaları.
+
+                    </p>
+
+
+                </div>
+
+
+                <div class="timeline-item">
+
+
+                    <div class="timeline-date"
+
+                        data-tr="Mayıs 2016 – Ocak 2018"
+
+                        data-en="May 2016 – Jan 2018">
+
+                        Mayıs 2016 – Ocak 2018
+
+                    </div>
+
+
+                    <h3 data-i18n="job4Title">
+
+                        Sistem Destek Sorumlusu
+
+                    </h3>
+
+
+                    <h4>
+
+                        Nimet Abla Piyango Gişesi
+
+                    </h4>
+
+
+                    <p data-i18n="job4Text">
+
+                        Veritabanı güncellemeleri, web sitesi yönetimi, ürün ve reklam içeriklerinin güncellenmesi.
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section class="skills" id="skills">
+
+
+        <div class="container">
+
+
+            <div class="section-heading">
+
+
+                <span data-i18n="skillsLabel">
+
+                    UZMANLIK ALANLARI
+
+                </span>
+
+
+                <h2 data-i18n="skillsTitle">
+
+                    Teknik Yetkinlikler
+
+                </h2>
+
+
+            </div>
+
+
+            <div class="skills-grid">
+
+
+                <div class="skill-card">
+
+                    <h3>
+
+                        Healthcare IT
+
+                    </h3>
+
+
+                    <p data-i18n="skillHealthcare">
+
+                        Hastane bilgi teknolojileri ve sağlık bilişimi operasyonları.
+
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>
+
+                        PACS & Medical Imaging
+
+                    </h3>
+
+
+                    <p data-i18n="skillPacs">
+
+                        PACS kurulumu, tıbbi görüntüleme sistemleri ve medikal cihaz entegrasyonları.
+
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>
+
+                        Active Directory
+
+                    </h3>
+
+
+                    <p data-i18n="skillAd">
+
+                        Kullanıcı, yetkilendirme ve envanter yönetimi.
+
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>
+
+                        Microsoft Configuration Manager
+
+                    </h3>
+
+
+                    <p data-i18n="skillMecm">
+
+                        Kurumsal cihaz ve sistem yönetimi.
+
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>
+
+                        Networking & VPN
+
+                    </h3>
+
+
+                    <p data-i18n="skillNetwork">
+
+                        Switch, IP yazıcı, VPN, Access Point ve ağ operasyonları.
+
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>
+
+                        VMware
+
+                    </h3>
+
+
+                    <p data-i18n="skillVmware">
+
+                        VMware sanallaştırma altyapıları ve sistem operasyonları.
+
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>
+
+                        Hyper-V
+
+                    </h3>
+
+
+                    <p data-i18n="skillHyperV">
+
+                        Microsoft Hyper-V sanallaştırma teknolojileri.
+
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>
+
+                        Linux
+
+                    </h3>
+
+
+                    <p data-i18n="skillLinux">
+
+                        Temel Linux işletim sistemi ve sistem operasyonları.
+
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>
+
+                        HL7 & KOS
+
+                    </h3>
+
+
+                    <p data-i18n="skillHl7">
+
+                        Sağlık sistemleri arası veri iletişimi ve mesaj kontrolleri.
+
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>
+
+                        IT Operations
+
+                    </h3>
+
+
+                    <p data-i18n="skillOperations">
+
+                        Son kullanıcı desteği, cihaz yönetimi ve operasyonel süreçler.
+
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>
+
+                        Web & Software
+
+                    </h3>
+
+
+                    <p data-i18n="skillWeb">
+
+                        Web tasarımı, HTML/CSS/JavaScript ve temel yazılım geliştirme deneyimi.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CERTIFICATIONS ================= -->
+
+    <section id="education">
+
+
+        <div class="container">
+
+
+            <div class="section-heading">
+
+
+                <span data-i18n="educationLabel">
+
+                    SERTİFİKALAR
+
+                </span>
+
+
+                <h2 data-i18n="educationTitle">
+
+                    Profesyonel Gelişim
+
+                </h2>
+
+
+            </div>
+
+
+            <div class="education-grid">
+
+
+                <div class="education-card">
+
+
+                    <h3>
+
+                        CCNA: Introduction to Networks
+
+                    </h3>
+
+
+                    <p data-i18n="ccnaText">
+
+                        Cisco Networking Academy – Ocak 2025
+
+                    </p>
+
+                </div>
+
+
+                <div class="education-card">
+
+
+                    <h3>
+
+                        .NET Training
+
+                    </h3>
+
+
+                    <p data-i18n="netText">
+
+                        Bilge Adam Akademi – Mayıs 2019
+
+                    </p>
+
+                </div>
+
+
+                <div class="education-card">
+
+
+                    <h3>
+
+                        UiPath Achievement Certificate
+
+                    </h3>
+
+
+                    <p data-i18n="uipathText">
+
+                        UiPath Türkiye – Mayıs 2019
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact" id="contact">
+
+
+        <div class="container">
+
+
+            <div class="section-heading">
+
+
+                <span data-i18n="contactLabel">
+
+                    İLETİŞİM
+
+                </span>
+
+
+                <h2 data-i18n="contactTitle">
+
+                    Birlikte değer üretelim.
+
+                </h2>
+
+
+                <p data-i18n="contactText">
+
+                    Sağlık bilişimi, IT operasyonları ve teknoloji odaklı profesyonel fırsatlar için benimle iletişime geçebilirsiniz.
+
+                </p>
+
+
+            </div>
+
+
+            <div class="contact-links">
+
+
+                <a class="contact-link"
+
+                    href="mailto:panserkan34@gmail.com">
+
+                    ✉ E-Mail
+
+                </a>
+
+
+                <a class="contact-link"
+
+                    href="https://www.linkedin.com/in/serkan-pan-b72096182/"
+
+                    target="_blank">
+
+                    LinkedIn
+
+                </a>
+
+
+                <a class="contact-link"
+
+                    href="https://github.com/serkan-pan"
+
+                    target="_blank">
+
+                    GitHub
+
+                </a>
+
+
+                <a class="contact-link"
+
+                    href="https://www.serkanpan.com"
+
+                    target="_blank">
+
+                    🌐 serkanpan.com
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        © 2026 Serkan Pan.
+
+        <span data-i18n="footerText">
+
+            Tüm hakları saklıdır.
+
+        </span>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+
+        /* ================= PHOTO SLIDER ================= */
+
+
+        const slides =
+
+            document.querySelectorAll(".slide");
+
+
+        const dots =
+
+            document.querySelectorAll(".dot");
+
+
+        const prevBtn =
+
+            document.getElementById("prevBtn");
+
+
+        const nextBtn =
+
+            document.getElementById("nextBtn");
+
+
+        let currentSlide = 0;
+
+
+        function showSlide(index) {
+
+
+            if (index >= slides.length) {
+
+                currentSlide = 0;
+
+            }
+
+
+            else if (index < 0) {
+
+                currentSlide = slides.length - 1;
+
+            }
+
+
+            else {
+
+                currentSlide = index;
+
+            }
+
+
+            slides.forEach(slide => {
+
+                slide.classList.remove("active");
+
+            });
+
+
+            dots.forEach(dot => {
+
+                dot.classList.remove("active");
+
+            });
+
+
+            slides[currentSlide]
+
+                .classList.add("active");
+
+
+            dots[currentSlide]
+
+                .classList.add("active");
+
+        }
+
+
+        nextBtn.addEventListener(
+
+            "click",
+
+            () => {
+
+                showSlide(currentSlide + 1);
+
+            }
+
+        );
+
+
+        prevBtn.addEventListener(
+
+            "click",
+
+            () => {
+
+                showSlide(currentSlide - 1);
+
+            }
+
+        );
+
+
+        dots.forEach(dot => {
+
+
+            dot.addEventListener(
+
+                "click",
+
+                () => {
+
+
+                    showSlide(
+
+                        parseInt(
+
+                            dot.dataset.slide
+
+                        )
+
+                    );
+
+                }
+
+            );
+
+        });
+
+
+        /* 5 SANİYEDE BİR OTOMATİK DEĞİŞİR */
+
+        setInterval(
+
+            () => {
+
+                showSlide(currentSlide + 1);
+
+            },
+
+            5000
+
+        );
+
+
+        /* ================= LANGUAGE ================= */
+
+
+        const translations = {
+
+
+            tr: {
+
+
+                navAbout: "Hakkımda",
+
+                navExperience: "Deneyim",
+
+                navSkills: "Uzmanlık",
+
+                navEducation: "Sertifikalar",
+
+                navContact: "İletişim",
+
+
+                heroDescription:
+
+                    "Sağlık bilişimi, hastane bilgi sistemleri ve IT operasyonları alanında deneyimli teknoloji profesyoneli.",
+
+
+                careerButton:
+
+                    "Kariyerimi İncele",
+
+
+                contactButton:
+
+                    "İletişime Geç",
+
+
+                aboutLabel:
+
+                    "HAKKIMDA",
+
+
+                aboutTitle:
+
+                    "Teknik uzmanlık ve sağlık bilişimi deneyimi.",
+
+
+                aboutIntro:
+
+                    "Sağlık sektöründe farklı teknoloji alanlarında edindiğim deneyimleri, sistem sürekliliği ve operasyonel verimlilik hedefleriyle birleştiriyorum.",
+
+
+                aboutText1:
+
+                    "Yaklaşık 8 yıllık IT ve sağlık bilişimi deneyimine sahibim. Kariyerim boyunca hastane bilgi teknolojileri, PACS, tıbbi görüntüleme sistemleri ve kurumsal IT operasyonları alanlarında aktif görev aldım.",
+
+
+                aboutText2:
+
+                    "Acıbadem Sağlık Grubu'ndaki mevcut görevimde Active Directory, Microsoft Configuration Manager, son kullanıcı destek süreçleri, VPN, ağ altyapısı, sunucu ve sistem operasyonları gibi birçok alanda sorumluluk üstleniyorum.",
+
+
+                aboutText3:
+
+                    "Sağlık teknolojilerinin kesintisiz, güvenli ve sürdürülebilir şekilde çalışmasına katkı sağlamayı hedefliyorum.",
+
+
+                statExperience:
+
+                    "Yıl IT Deneyimi",
+
+
+                statHealthcare:
+
+                    "Yıl Sağlık Teknolojileri Deneyimi",
+
+
+                statPacs:
+
+                    "Tıbbi Görüntüleme",
+
+
+                statOperations:
+
+                    "Sistem ve Operasyon Yönetimi",
+
+
+                experienceLabel:
+
+                    "KARİYER",
+
+
+                experienceTitle:
+
+                    "Profesyonel Deneyim",
+
+
+                experienceIntro:
+
+                    "IT destek operasyonlarından sağlık bilişimi ve kurumsal sistem yönetimine uzanan kariyer yolculuğum.",
+
+
+                job1Title:
+
+                    "Sistem Destek Sorumlusu",
+
+
+                job1Text:
+
+                    "Active Directory kullanıcı ve envanter yönetimi, Microsoft Configuration Manager, Right Click Tools, son kullanıcı desteği, cihaz kurulumları, VPN, switch panelleri, IP yazıcılar, McAfee, Exchange, Access Point, Print Server, VMware, sunucu disk değişimi ve Linux sistem işlemleri.",
+
+
+                job2Title:
+
+                    "Bilgi Teknolojileri Sorumlusu",
+
+
+                job2Text:
+
+                    "PACS kurulumu, KOS gönderim süreçleri, HL7 mesaj kontrolleri, VPN, kullanıcı yetkilendirme, medikal monitörler, CD robotları, workstation kurulumları ve medikal cihaz entegrasyonları.",
+
+
+                job3Title:
+
+                    "Bilgi Teknolojileri / IT Uzmanı",
+
+
+                job3Text:
+
+                    "PACS sistemleri, medikal cihaz entegrasyonları, HL7 süreçleri, VPN, kullanıcı hesapları, workstation, SpeechMike ve sağlık teknolojileri operasyonları.",
+
+
+                job4Title:
+
+                    "Sistem Destek Sorumlusu",
+
+
+                job4Text:
+
+                    "Veritabanı güncellemeleri, web sitesi yönetimi, ürün ve reklam içeriklerinin güncellenmesi.",
+
+
+                job5Title:
+
+                    "Grafik Tasarımcı",
+
+
+                job5Text:
+
+                    "Logo, web banner, katalog, broşür, menü, ambalaj ve kurumsal tasarım çalışmaları.",
+
+
+                skillsLabel:
+
+                    "UZMANLIK ALANLARI",
+
+
+                skillsTitle:
+
+                    "Teknik Yetkinlikler",
+
+
+                skillHealthcare:
+
+                    "Hastane bilgi teknolojileri ve sağlık bilişimi operasyonları.",
+
+
+                skillPacs:
+
+                    "PACS kurulumu, tıbbi görüntüleme sistemleri ve medikal cihaz entegrasyonları.",
+
+
+                skillAd:
+
+                    "Kullanıcı, yetkilendirme ve envanter yönetimi.",
+
+
+                skillMecm:
+
+                    "Kurumsal cihaz ve sistem yönetimi.",
+
+
+                skillNetwork:
+
+                    "Switch, IP yazıcı, VPN, Access Point ve ağ operasyonları.",
+
+
+                skillVmware:
+
+                    "VMware sanallaştırma altyapıları ve sistem operasyonları.",
+
+
+                skillHyperV:
+
+                    "Microsoft Hyper-V sanallaştırma teknolojileri.",
+
+
+                skillLinux:
+
+                    "Temel Linux işletim sistemi ve sistem operasyonları.",
+
+
+                skillHl7:
+
+                    "Sağlık sistemleri arası veri iletişimi ve mesaj kontrolleri.",
+
+
+                skillOperations:
+
+                    "Son kullanıcı desteği, cihaz yönetimi ve operasyonel süreçler.",
+
+
+                skillWeb:
+
+                    "Web tasarımı, HTML/CSS/JavaScript ve temel yazılım geliştirme deneyimi.",
+
+
+                educationLabel:
+
+                    "SERTİFİKALAR",
+
+
+                educationTitle:
+
+                    "Profesyonel Gelişim",
+
+
+                ccnaText:
+
+                    "Cisco Networking Academy – Ocak 2025",
+
+
+                netText:
+
+                    "Bilge Adam Akademi – Mayıs 2019",
+
+
+                uipathText:
+
+                    "UiPath Türkiye – Mayıs 2019",
+
+
+                contactLabel:
+
+                    "İLETİŞİM",
+
+
+                contactTitle:
+
+                    "Birlikte değer üretelim.",
+
+
+                contactText:
+
+                    "Sağlık bilişimi, IT operasyonları ve teknoloji odaklı profesyonel fırsatlar için benimle iletişime geçebilirsiniz.",
+
+
+                footerText:
+
+                    "Tüm hakları saklıdır."
+
+            },
+
+
+            en: {
+
+
+                navAbout: "About",
+
+                navExperience: "Experience",
+
+                navSkills: "Expertise",
+
+                navEducation: "Certifications",
+
+                navContact: "Contact",
+
+
+                heroDescription:
+
+                    "Healthcare IT professional with experience in hospital information systems, medical imaging technologies and IT operations.",
+
+
+                careerButton:
+
+                    "View My Career",
+
+
+                contactButton:
+
+                    "Get In Touch",
+
+
+                aboutLabel:
+
+                    "ABOUT ME",
+
+
+                aboutTitle:
+
+                    "Technical expertise and healthcare IT experience.",
+
+
+                aboutIntro:
+
+                    "I combine my experience across different technology areas in healthcare with a strong focus on system continuity and operational efficiency.",
+
+
+                aboutText1:
+
+                    "I have approximately 8 years of experience in IT and healthcare technology. Throughout my career, I have worked with hospital information technologies, PACS, medical imaging systems and enterprise IT operations.",
+
+
+                aboutText2:
+
+                    "In my current role at Acıbadem Healthcare Group, I am responsible for areas including Active Directory, Microsoft Configuration Manager, end-user support, VPN, network infrastructure, server and system operations.",
+
+
+                aboutText3:
+
+                    "My goal is to contribute to the secure, continuous and sustainable operation of healthcare technologies.",
+
+
+                statExperience:
+
+                    "Years of IT Experience",
+
+
+                statHealthcare:
+
+                    "Years in Healthcare Technology",
+
+
+                statPacs:
+
+                    "Medical Imaging",
+
+
+                statOperations:
+
+                    "Systems & IT Operations",
+
+
+                experienceLabel:
+
+                    "CAREER",
+
+
+                experienceTitle:
+
+                    "Professional Experience",
+
+
+                experienceIntro:
+
+                    "My career journey from IT support operations to healthcare technology and enterprise systems.",
+
+
+                job1Title:
+
+                    "System Support Specialist",
+
+
+                job1Text:
+
+                    "Active Directory user and inventory management, Microsoft Configuration Manager, Right Click Tools, end-user support, device installations, VPN, switch panels, IP printers, McAfee, Exchange, Access Points, Print Server, VMware, server disk replacement and Linux operations.",
+
+
+                job2Title:
+
+                    "Information Technologies Specialist",
+
+
+                job2Text:
+
+                    "PACS installations, KOS transmission processes, HL7 message controls, VPN, user authorization, medical monitors, CD robots, workstation installations and medical device integrations.",
+
+
+                job3Title:
+
+                    "Information Technologies / IT Specialist",
+
+
+                job3Text:
+
+                    "PACS systems, medical device integrations, HL7 processes, VPN, user accounts, workstations, SpeechMike and healthcare technology operations.",
+
+
+                job4Title:
+
+                    "System Support Specialist",
+
+
+                job4Text:
+
+                    "Database updates, website management, product and advertising content updates.",
+
+
+                job5Title:
+
+                    "Graphic Designer",
+
+
+                job5Text:
+
+                    "Logo, web banner, catalog, brochure, menu, packaging and corporate design projects.",
+
+
+                skillsLabel:
+
+                    "AREAS OF EXPERTISE",
+
+
+                skillsTitle:
+
+                    "Technical Expertise",
+
+
+                skillHealthcare:
+
+                    "Hospital information technologies and healthcare IT operations.",
+
+
+                skillPacs:
+
+                    "PACS installation, medical imaging systems and medical device integrations.",
+
+
+                skillAd:
+
+                    "User, authorization and inventory management.",
+
+
+                skillMecm:
+
+                    "Enterprise device and system management.",
+
+
+                skillNetwork:
+
+                    "Switches, IP printers, VPN, Access Points and network operations.",
+
+
+                skillVmware:
+
+                    "VMware virtualization infrastructure and system operations.",
+
+
+                skillHyperV:
+
+                    "Microsoft Hyper-V virtualization technologies.",
+
+
+                skillLinux:
+
+                    "Basic Linux operating system and system operations.",
+
+
+                skillHl7:
+
+                    "Healthcare system data communication and message monitoring.",
+
+
+                skillOperations:
+
+                    "End-user support, device management and operational processes.",
+
+
+                skillWeb:
+
+                    "Web design, HTML/CSS/JavaScript and basic software development experience.",
+
+
+                educationLabel:
+
+                    "CERTIFICATIONS",
+
+
+                educationTitle:
+
+                    "Professional Development",
+
+
+                ccnaText:
+
+                    "Cisco Networking Academy – January 2025",
+
+
+                netText:
+
+                    "Bilge Adam Academy – May 2019",
+
+
+                uipathText:
+
+                    "UiPath Turkey – May 2019",
+
+
+                contactLabel:
+
+                    "CONTACT",
+
+
+                contactTitle:
+
+                    "Let's create value together.",
+
+
+                contactText:
+
+                    "Feel free to contact me regarding healthcare IT, IT operations and technology-focused professional opportunities.",
+
+
+                footerText:
+
+                    "All rights reserved."
+
+            }
+
+        };
+
+
+        function changeLanguage(language) {
+
+
+            document.documentElement.lang = language;
+
+
+            document.querySelectorAll("[data-i18n]")
+
+                .forEach(element => {
+
+
+                    const key =
+
+                        element.getAttribute("data-i18n");
+
+
+                    if (translations[language][key]) {
+
+
+                        element.textContent =
+
+                            translations[language][key];
+
+                    }
+
+                });
+
+
+            document.querySelectorAll(".timeline-date")
+
+                .forEach(date => {
+
+
+                    date.textContent =
+
+                        date.getAttribute(
+
+                            language === "tr"
+
+                                ? "data-tr"
+
+                                : "data-en"
+
+                        );
+
+                });
+
+
+            document.getElementById("trBtn")
+
+                .classList.toggle(
+
+                    "active",
+
+                    language === "tr"
+
+                );
+
+
+            document.getElementById("enBtn")
+
+                .classList.toggle(
+
+                    "active",
+
+                    language === "en"
+
+                );
+
+
+            localStorage.setItem(
+
+                "language",
+
+                language
+
+            );
+
+        }
+
+
+        document.getElementById("trBtn")
+
+            .addEventListener(
+
+                "click",
+
+                () => changeLanguage("tr")
+
+            );
+
+
+        document.getElementById("enBtn")
+
+            .addEventListener(
+
+                "click",
+
+                () => changeLanguage("en")
+
+            );
+
+
+        /* ================= MOBILE MENU ================= */
+
+
+        const menuBtn =
+
+            document.getElementById("menuBtn");
+
+
+        const navLinks =
+
+            document.getElementById("navLinks");
+
+
+        menuBtn.addEventListener(
+
+            "click",
+
+            () => {
+
+
+                navLinks.classList.toggle(
+
+                    "active"
+
+                );
+
+            }
+
+        );
+
+
+        document.querySelectorAll(".nav-links a")
+
+            .forEach(link => {
+
+
+                link.addEventListener(
+
+                    "click",
+
+                    () => {
+
+
+                        navLinks.classList.remove(
+
+                            "active"
+
+                        );
+
+                    }
+
+                );
+
+            });
+
+
+        /* SAVED LANGUAGE */
+
+
+        const savedLanguage =
+
+            localStorage.getItem("language") || "tr";
+
+
+        changeLanguage(savedLanguage);
+
+
+    </script>
+
+
+</body>
+
+</html>
